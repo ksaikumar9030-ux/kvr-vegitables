@@ -1,0 +1,1 @@
+import {Routes} from '@angular/router';export const PRODUCT_ROUTES:Routes=[{path:'',loadComponent:()=>import('../pages/products.component').then(m=>m.ProductsComponent)},{path:':id',loadComponent:()=>import('../pages/product-details.component').then(m=>m.ProductDetailsComponent)}];

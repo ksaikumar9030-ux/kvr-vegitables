@@ -1,0 +1,1 @@
+export interface Product{id:number;name:string;group:'Vegetable'|'Dry Fish';category:string;price:number;unit:string;stock:number;image:string;description:string;featured?:boolean}

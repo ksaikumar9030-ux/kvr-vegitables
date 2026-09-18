@@ -1,0 +1,3 @@
+import {Component} from '@angular/core';import {CommonModule} from '@angular/common';import {ActivatedRoute,RouterLink} from '@angular/router';import {StoreService} from '../store.service';
+@Component({standalone:true,imports:[CommonModule,RouterLink],templateUrl:'./product-details.component.html',styleUrl:'./product-details.component.css'})
+export class ProductDetailsComponent{product;constructor(route:ActivatedRoute,public store:StoreService){this.product=store.products.find(p=>p.id===Number(route.snapshot.paramMap.get('id')))}add(){if(this.product)this.store.add(this.product)}}
