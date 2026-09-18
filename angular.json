@@ -15,5 +15,9 @@
           "production":{"buildTarget":"kvr-vegetables-dry-sea-fish:build:production"}
         },"defaultConfiguration":"development"}
     }
-  }}
+  }
+},
+"cli": {
+  "analytics": "665361c5-f01a-4d3f-bd5a-5d7b7a76af97"
+}
 }
